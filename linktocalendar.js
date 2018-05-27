@@ -141,7 +141,7 @@
     if (w.addtocalendar && typeof w.addtocalendar.start == "function") return;
     if (!w.addtocalendar) w.addtocalendar = {};
 
-    addtocalendar.languages = {
+    linktocalendar.languages = {
         'de': 'In den Kalender',
         'en': 'Add to Calendar',
         'es': 'Añadir al Calendario',
@@ -159,9 +159,9 @@
         'no': 'Legg til i kalender'
     };
 
-    addtocalendar.calendar_urls = {}
+    linktocalendar.calendar_urls = {}
 
-    addtocalendar.loadSettings = function (element) {
+    linktocalendar.loadSettings = function (element) {
         var settings = {
             'language': 'auto',
             'show-list-on': 'click',
@@ -206,7 +206,7 @@
         return settings;
     };
 
-    addtocalendar.load = function () {
+    linktocalendar.load = function () {
 
         var calendarsUrl = {
             'iCalendar': 'ical',
@@ -217,7 +217,7 @@
         };
         var utz = (-(new Date()).getTimezoneOffset().toString());
 
-        var languages = addtocalendar.languages;
+        var languages = linktocalendar.languages;
 
         var dom = document.getElementsByTagName('*');
         for (var tagnum = 0; tagnum < dom.length; tagnum++) {
@@ -225,7 +225,7 @@
 
             if (tag_class.length && tag_class.split(" ").indexOf('addtocalendar') != -1) {
 
-                var settings = addtocalendar.loadSettings(dom[tagnum]);
+                var settings = linktocalendar.loadSettings(dom[tagnum]);
 
                 var protocol = 'http:';
                 if (settings['secure'] == 'auto') {
@@ -341,5 +341,5 @@
             }
         }
     };
-    addtocalendar.load();
+    linktocalendar.load();
 })(window, document);
