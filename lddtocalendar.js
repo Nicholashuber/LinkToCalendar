@@ -1,4 +1,4 @@
-/* http://addtocalendar.com/
+/* http://linktocalendar.com/
  *
  *
  * @license
