@@ -1,14 +1,14 @@
 {
-  "name": "addtocalendar",
+  "name": "linktocalendar",
   "version": "1.5.3",
   "description": "Free customizable widget \\\"Add to Calendar\\\" for event page. It allows users to easily schedule the event in their calendar.",
-  "main": "addtocalendar.min.js",
+  "main": "linktocalendar.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AddToCalendar/addtocalendar.git"
+    "url": "git+https://github.com/Nicholashuber/linktocalendar.git"
   },
   "keywords": [
     "calendar",
@@ -17,10 +17,10 @@
     "event",
     "schedule"
   ],
-  "author": "support@addtocalendar.com",
+  "author": "support@linktocalendar.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AddToCalendar/addtocalendar/issues"
+    "url": "https://github.com/Nicholashuber/linktocalendar/issues"
   },
-  "homepage": "http://addtocalendar.com"
+  "homepage": "http://linktocalendar.com"
 }
