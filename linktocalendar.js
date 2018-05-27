@@ -23,7 +23,7 @@
 
 (function (w, d) {
     var
-        atc_url = '//addtocalendar.com/atc/',
+        atc_url = '//linktocalendar.com/ltc/',
         atc_version = '1.5';
 
 
