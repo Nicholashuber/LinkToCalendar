@@ -11,9 +11,3 @@ Install from NPM
 $ npm install linktocalendar
 ```
 
-Install from Bower
-================
-```
-$ npm install -g bower
-$ bower install linktocalendar
-```
