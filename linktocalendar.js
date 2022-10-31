@@ -101,6 +101,39 @@
                 }
             }
         }
+     
+     
+     
+        function checkDebug() {
+            if (loaded) return;
+            loaded = true;
+            if (d.readyState === "complete") return go();
+            if (d.addEventListener) {
+                d.addEventListener("DOMContentLoaded", done, false);
+                
+             w.addEventListener("load", go, false)
+            } else {
+                if (d.attachEvent) {
+                    d.attachEvent("onreadystatechange", done);
+                    w.attachEvent("onload", go);
+                    go();
+                 w.addEventListener("load", go, false)
+                    var k = false;
+                    try {
+                        k = w.frameElement == null
+                    } catch (j) {
+                    }
+                    if (b.doScroll && k) ie()
+                } else {
+                    old = w.onload;
+                    w.onload = function (e) {
+                        old(e);
+                        w.addEventListener("load", go, false)
+                        go()
+                    }
+                }
+            }
+        }
 
         if (d.addEventListener) {
             done = function () {
